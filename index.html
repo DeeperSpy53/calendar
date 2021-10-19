@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"></link>
+    <title>Calendar</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container_head">
+            <button class="button_add" onclick="clickAdd()">Добавить</button>
+            <div class="triangle"></div>
+            <div id="modalAdd" class="modal_add">
+                <img class="close_add" src="img/cross.svg" alt="">
+                <input id="input_add" class="input_add" placeholder="25 ноября, Кутеж, Серж">
+                <button class="button_create" onclick="createClick()">Создать</button>
+            </div>
+            <button class="button_up" onclick="updateClick()">Обновить</button>
+            <img class="search_icon" src="img/search_icon.svg" width ="20" height="20" alt="">
+            <input class="search" placeholder="Placeholder">
+        </div>
+    </div>
+    
+    <div class="calendar">
+        <div class="calendar_head">
+            <button class="button_arrow" onclick="backClick()"><img class="arrowleft_icon" src="img/arrow_icon.svg" alt=""></button>
+            <h1 class="month"></h1>
+            <button class="button_arrow" onclick="nextClick()"><img class="arrowright_icon" src="img/arrow_icon.svg" alt=""></button>
+            <button class="button_today" onclick="todayClick()">Сегодня</button>
+        </div>
+ 
+        <div class="table">
+            <div class="row">
+                <div class="cell">
+                    <h2 class="day" id="0">Понедельник</h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="1">Вторник</h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="2">Среда</h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="3">Четверг</h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="4">Пятница</h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="5">Суббота</h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="6">Воскресенье</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <h2 class="day" id="7"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="8"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="9"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="10"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="11"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="12"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="13"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <h2 class="day" id="14"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="15"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="16"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="17"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="18"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="19"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="20"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <h2 class="day" id="21"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="22"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="23"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="24"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="25"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="26"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="27"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <h2 class="day" id="28"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="29"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="30"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="31"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="32"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="33"></h2>
+                </div>
+                <div class="cell">
+                    <h2 class="day" id="34"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/events.js"></script>
+</body>
+</html>
